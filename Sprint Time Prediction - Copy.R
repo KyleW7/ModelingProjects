@@ -5,12 +5,12 @@ library(tidyr)
 library(moments)
 library(ggpubr)
 library(kableExtra)
-
+library(readxl)
 # Set seed for reproducibility
 set.seed(123)
 
 # Load dataset
-dat <- Ks_Strength_Testing_Sample_TripleJump_and_20yd
+dat <- readxlsx("path")
 
 # Data Cleaning
 dat <- dat %>%
